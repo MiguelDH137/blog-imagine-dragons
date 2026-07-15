@@ -1,80 +1,182 @@
 body {
-    margin:0;
-    padding:0;
-    width:100%;
-    font-family: sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: #f5f5f7;
 }
 
 /* seccion 5: artistas */
 #seccion-artistas {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#seccion-artistas h2 {
+    text-align: center;
+    color: #00f0ff;
 }
 
 #contenedor-artistas-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 20px;
 }
 
 #contenedor-artistas-1 img {
-    width: 70%;
-    border-radius: 15px;
+  width: 70%;
+  border-radius: 15px;
+}
+
+#contenedor-artistas-1 img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px -5px #f5f5f7;
 }
 
 #contenedor-artistas-1 p {
-    width: 70%;
-    text-align: justify;
+  width: 70%;
+  text-align: justify;
 }
 
 #contenedor-artistas-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+
+#contenedor-artistas-2 h2 {
+  color: #00f0ff;
 }
 
 .contenedor-artistas-tarjeta {
-    display: flex;
-    width: 80%;
-    justify-content:center;
-    gap: 40px;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  gap: 40px;
 }
 
 .tarjeta-artistas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    gap: 10px;
-    padding-top:20px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  gap: 10px;
+  padding-top: 20px;
+  border: 1px solid #8a99ad;
+  background-color: #0d0d0d;
+  border-radius: 15px;
 }
 
 .tarjeta-artistas p {
-    width: 70%;
-    text-align:left;
+  width: 70%;
+  text-align: left;
 }
 
 #tarjeta-artistas-1 img {
-    width: 40%;
-    border-radius: 100%;
+  width: 40%;
+  border-radius: 100%;
 }
 
 #tarjeta-artistas-2 img {
-    width: 40%;
-    border-radius: 100%;
+  width: 40%;
+  border-radius: 100%;
 }
 
 #tarjeta-artistas-3 img {
-    width: 40%;
-    border-radius: 100%;
+  width: 40%;
+  border-radius: 100%;
+}
+
+/* Seccion 6: Colab artistas */
+#seccion-colab-artistas {
+  width: 100%;
+  margin-top: 100px;
+}
+
+#seccion-colab-artistas h2 {
+    text-align: center;
+    color: #00f0ff;
+}
+
+.contenedor-colab-artistas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:100px;
+}
+
+.tarjeta-colab-artistas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid #8a99ad;
+  background-color: #0d0d0d;
+  border-radius: 15px;
+}
+
+#tarjeta-colab-artistas-1 img {
+  width: 300px;
+}
+
+#tarjeta-colab-artistas-1 p {
+  width: 400px;
+  text-align: justify;
+}
+
+#link-colab-artistas-1 img {
+  width: 500px;
+}
+
+#tarjeta-colab-artistas-2 img {
+  width: 300px;
+}
+
+#tarjeta-colab-artistas-2 p {
+  width: 400px;
+  text-align: justify;
+}
+
+#link-colab-artistas-2 img {
+  width: 600px;
+}
+
+#tarjeta-colab-artistas-3 img {
+  width: 300px;
+}
+
+#tarjeta-colab-artistas-3 p {
+  width: 400px;
+  text-align: justify;
+}
+
+#link-colab-artistas-3 img {
+  width: 400px;
+}
+
+#tarjeta-colab-artistas-4 img {
+  width: 300px;
+}
+
+#tarjeta-colab-artistas-4 p {
+  width: 400px;
+  text-align: justify;
+}
+
+#link-colab-artistas-4 img {
+  width: 300px;
+}
+
+.link-colab-artistas {
+  text-align: center;
+  background: #0d0d0d;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
