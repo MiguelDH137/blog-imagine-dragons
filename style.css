@@ -1,275 +1,227 @@
-
 :root {
-    --bg-dark: #0b0c10;
-    --bg-card: #1f2833;
-    --text-light: #f5f5f5;
-    --accent-color: #00f0ff; 
-    --font-family: 'Montserrat', sans-serif;
+  --bg-dark: #0b0c10;
+  --bg-card: #1f2833;
+  --text-light: #f5f5f5;
+  --accent-color: #00f0ff;
+  --font-family: "Montserrat", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    line-height: 1.6;
-    scroll-behavior: smooth;
+  font-family: var(--font-family);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    background-color: rgba(11, 12, 16, 0.95);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: rgba(11, 12, 16, 0.95);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--text-light);
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-light);
 }
 
 .nav-links a {
-    color: var(--text-light);
-    text-decoration: none;
-    margin-left: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
+  color: var(--text-light);
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-
 .hero-section {
-    height: 100vh;
-    width: 100%;
-    
-    
-    background-image: url(No39-imagine-dragons-1.jpg); 
-    
-    
-    background-position: center 30%; 
-    background-repeat: no-repeat;
-    background-size: cover;          
-    
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(No39-imagine-dragons-1.jpg);
+
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    background: linear-gradient(to bottom, rgba(11, 12, 16, 0.3), var(--bg-dark));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(to bottom, rgba(11, 12, 16, 0.3), var(--bg-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .hero-content {
-    text-align: center;
-    z-index: 10; 
-    padding: 20px;
+  text-align: center;
+  z-index: 10;
+  padding: 20px;
 }
 
 .hero-content h1 {
-    font-size: 5rem;
-    font-weight: 900;
-    letter-spacing: 8px;
-    margin-bottom: 10px;
-    text-shadow: 0 0 20px rgba(0, 240, 255, 0.7);
-    color: var(--text-light);
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.7);
+  color: var(--text-light);
 }
 
 .hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--text-light);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-light);
 }
 
 .btn-hero-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn-hero {
-    padding: 12px 35px;
-    background-color: transparent;
-    color: var(--text-light);
-    border: 2px solid var(--accent-color);
-    border-radius: 5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+  padding: 12px 35px;
+  background-color: transparent;
+  color: var(--text-light);
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
 }
 
 .btn-hero:hover {
-    background-color: var(--accent-color);
-    color: var(--bg-dark);
-    box-shadow: 0 0 25px var(--accent-color);
-    transform: scale(1.05); 
+  background-color: var(--accent-color);
+  color: var(--bg-dark);
+  box-shadow: 0 0 25px var(--accent-color);
+  transform: scale(1.05);
 }
 
-
 .history-section {
-    padding: 100px 8% 80px 8%;
-    background-color: var(--bg-dark);
+  padding: 100px 8% 80px 8%;
+  background-color: var(--bg-dark);
 }
 
 .section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin-bottom: 60px;
-    letter-spacing: 2px;
-    position: relative;
-    color: var(--text-light);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+  position: relative;
+  color: var(--text-light);
 }
 
 .section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: var(--accent-color);
-    margin: 15px auto 0 auto;
-    border-radius: 2px;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+  margin: 15px auto 0 auto;
+  border-radius: 2px;
 }
 
 .history-container {
-    display: flex;
-    flex-direction: column;
-    gap: 80px; 
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .history-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
 }
 
-
 .history-row.reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .history-text {
-    flex: 1;
+  flex: 1;
 }
 
 .history-text h3 {
-    font-size: 1.8rem;
-    color: var(--accent-color);
-    margin-bottom: 15px;
-    text-transform: uppercase;
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .history-text p {
-    font-size: 1.1rem;
-    color: #c5c6c7;
-    text-align: justify;
+  font-size: 1.1rem;
+  color: #c5c6c7;
+  text-align: justify;
 }
 
-
 .history-image-placeholder {
-    flex: 1;
-    height: 350px; 
-    background-color: var(--bg-card);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
+  flex: 1;
+  height: 350px;
+  background-color: var(--bg-card);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .history-image-placeholder:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-color);
-    box-shadow: 0 5px 15px rgba(0, 240, 255, 0.2);
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+  box-shadow: 0 5px 15px rgba(0, 240, 255, 0.2);
 }
 
 .placeholder-text {
-
-    color: #666;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Responsive para celu */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 15px 5%;
-    }
-    
-    .nav-links {
-        display: none; 
-    }
-
-    .hero-content h1 {
-        font-size: 3rem;
-        letter-spacing: 4px;
-    }
-    
-    .hero-content p {
-        font-size: 1.1rem;
-    }
-
-    .history-row, 
-    .history-row.reverse {
-        flex-direction: column;
-        gap: 30px;
-    }
-    
-    .history-image-placeholder {
-        width: 100%;
-        height: 250px;
-    }
-    
-    .history-text h3 {
-        font-size: 1.5rem;
-    }
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-family: sans-serif;
-  background-color: rgb(0, 0, 0);
-  color: #f5f5f7;
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* seccion 5: artistas */
@@ -281,8 +233,8 @@ body {
 }
 
 #seccion-artistas h2 {
-    text-align: center;
-    color: #00f0ff;
+  text-align: center;
+  color: #00f0ff;
 }
 
 #contenedor-artistas-1 {
@@ -299,8 +251,8 @@ body {
 }
 
 #contenedor-artistas-1 img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 15px 30px -5px #f5f5f7;
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 30px -5px #f5f5f7;
 }
 
 #contenedor-artistas-1 p {
@@ -373,15 +325,15 @@ body {
 }
 
 #seccion-colab-artistas h2 {
-    text-align: center;
-    color: #00f0ff;
+  text-align: center;
+  color: #00f0ff;
 }
 
 .contenedor-colab-artistas {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin:100px;
+  margin: 100px;
 }
 
 .tarjeta-colab-artistas {
@@ -464,4 +416,47 @@ body {
 .link-colab-artistas:hover {
   transform: translateY(-5px);
   box-shadow: 0px 15px 30px -5px #f5f5f7;
+}
+
+/* Responsive para celu */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .history-row,
+  .history-row.reverse {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .history-image-placeholder {
+    width: 100%;
+    height: 250px;
+  }
+
+  .history-text h3 {
+    font-size: 1.5rem;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: #f5f5f7;
+  }
 }
